@@ -1,75 +1,50 @@
-/* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
-    width: 40%;
-    margin: 120px auto;
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  background-color:#f4f4f4;
+  padding:0;
+  margin:0;
 }
 
-/* Full-width inputs */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+/* Global */
+.container{
+  width:40%;
+  margin: auto;
+  overflow:hidden;
+  background-color: #c0cfe0;
+  padding: 40px;
 }
-
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+section{
+    background-color: #f4f4f4;
+    padding-top: 130px;
+    min-height: calc(100vh - 210px);
 }
-
-/* Add a hover effect for buttons */
-button:hover {
-    opacity: 0.8;
-}
-
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Center the avatar image inside this container */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-/* Avatar image */
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-/* Add padding to containers */
-.container {
+section form{
     width: 80%;
-    padding: 0px;
-    margin: 0 auto;
-}
+    margin:auto;
+    overflow: hidden;
+    color: #fe3d24;
 
-/* The "Forgot password" text */
-span.psw {
-    float: right;
-    padding-top: 16px;
 }
+form label{
+    margin-left: 20px;
+}
+section input{
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding:4px;
+    height:30px;
+}
+section button{
+    display: block;
+    margin: 15px auto;
+    padding: 8px 40px 8px 40px;
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
+}
+footer{
+    margin: auto;
+    background-color: #273c56;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
 }
