@@ -1,0 +1,79 @@
+<DOCTYPE! html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Your No. 1 store manager app!">
+    <meta name="keywords" content="inventory management, sales records, store management app">
+    <meta name="author" content="Emmanuel Ihemegbulam">
+    <title>Store Manager | Users</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <div id="site-id">
+          <h1>Store Manager</h1>
+        </div>
+        <div id="session">
+          <p>User:<span>...</span>&nbsp;&nbsp;<span id="date"></span>&nbsp;&nbsp;<button>log out</button></p>
+        </div>
+      </div>
+
+    </header>
+    <aside class="main-links">
+      <nav>
+        <ul>
+          <li><a href="sales.html">Sales</a></li>
+          <li><a href="records.html">Sales Records</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="users.html">Manage Users</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <section>
+      <div id="main">
+      
+          <h3>Sales Records</h3>
+          <table>
+            <tr>
+              <th>Record ID</th>
+              <th>Date</th>
+              <th>Amount</th>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="side-bar">
+          <h3>Record:&nbsp;&nbsp;&nbsp;<span>...</span></h3>
+          <h5>Date:&nbsp;&nbsp;&nbsp;<span>...</span></h5>
+          <h5>By:&nbsp;&nbsp;&nbsp;<span>...</span></h5>
+           <table>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </table>
+          <h5>Total&nbsp;&nbsp;&nbsp;&nbsp;<span id="total-price">0</span></h5>
+
+      </div>
+    </section>
+    <footer class="my-footer">
+      <p>Store Manager | Copyright &copy; 2018</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
