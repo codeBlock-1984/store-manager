@@ -28,8 +28,9 @@ input, select{
   padding: 40px;
   border-radius: 15px;
 }
-div.container label{
-    margin: 20px 0px 5px 0px;
+div.container input{
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 section#login{
     background-color: #f4f4f4;
@@ -45,6 +46,7 @@ section form#login{
 }
 form label{
     margin-left: 20px;
+    margin-top: 40px;
 }
 form#search{
     margin: 40px 0px 20px 10px;
@@ -60,7 +62,7 @@ form#search input[type="search"], select{
 section input.i-login{
     width: 90%;
     display: block;
-    margin: auto;
+    margin: 10px auto;
     padding:4px;
     height:30px;
 }
@@ -68,6 +70,7 @@ section button.btn-g{
     display: block;
     margin: 15px auto;
     padding: 8px 40px 8px 40px;
+    height: 50px;
 
 }
 .banner{
@@ -192,6 +195,9 @@ tr:nth-child(even) {
 @media(max-width: 768px) {
     body{
         font: 12px/1.0 Arial, Helvetica,sans-serif;
+    }
+    button.btn-g{
+        width:110px;
     }
     .container{
         width:50%;
