@@ -28,6 +28,9 @@ input, select{
   padding: 40px;
   border-radius: 15px;
 }
+div.container label{
+    margin-left: 20px 0px 5px 0px;
+}
 section#login{
     background-color: #f4f4f4;
     padding-top: 130px;
