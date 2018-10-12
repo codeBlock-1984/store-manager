@@ -215,6 +215,9 @@ tr:nth-child(even) {
     div#session button{
         width: 15%;
     }
+    div#session form{
+        display: inline-block;
+    }
 
     aside.main-links{
         float: none;
