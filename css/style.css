@@ -145,17 +145,23 @@ div#action-btns button{
 }
  div#main{
     float: left;
-    background-color: ##f4f4f4;
+    background-color: #f4f4f4;
     width: 60%;
     height: 500px;
     
+}
+div#test{
+    float: left;
+    background-color: #ffffff;
+    width: 60%;
+    height: 50px;
 }
 div#main h3{
     margin:40px 0px 20px 20px;
 }
 div.side-bar{
     float: left;
-    background-color: ##f4f4f4;
+    background-color: #f4f4f4;
     width: 20%;
     height: 500px;
     border-left: 1px solid black;
