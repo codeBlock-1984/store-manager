@@ -41,30 +41,27 @@
             <option value="electronics">Electronics</option>
             <option value="games">Games</option>
           </select>
-          <button onclick="func()" type="button">Search</button>
+          <button id="srch" onclick="func" type="button">Search</button>
         </form>
       </div>
-      <div id="test">My test div</div>
+      <!--<div id="test">My test div</div>-->
       <div id="action-btns">
         <button>Add</button>
         <button>Modify</button>
         <button>Delete</button>
       </div>
-
+      <div class="pt">
         <table>
             <tr>
-              <th>Product Item</th>
-              <th>Product Category</th>
-              <th>Current Stock</th>
-              <th>Unit Price</th>
+              <th>ID</th>
+              <th>Item</th>
+              <th>Category</th>
+              <th>Stock</th>
+              <th>Price</th>
             </tr>
-            <tr>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
+            <tbody id="sr"></tbody>
           </table>
+      </div>  
 
       </div>
     </section>
@@ -72,8 +69,15 @@
     <section>
       <div class="side-bar">
           <h3>Product</h3>
+          <ul>
+            <li>Name&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="s2"></span></li>
+            <li>ID &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="s1"></span></li>
+            <li>Category&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="s3"></span></li>
+            <li>Stock&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="s4"></span></li>
+            <li>Price&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="s5"></span></li>
+            <li>Min Stock&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="s6"></span></li>
+          </ul>
           
-
       </div>
     </section>
     <footer class="my-footer">

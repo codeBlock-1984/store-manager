@@ -172,6 +172,38 @@ div.side-bar h3, h5{
 div.side-bar button{
     margin: 0px 0px 20px 20px;
 }
+div.side-bar ul li{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.pt table {
+    width: 100%;
+    font: 17px Calibri;
+}
+div.pt table, th, td {
+    border: solid 1px #DDD;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+}
+      
+div.pt input[type='button'] {
+    font: 15px Calibri;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+}
+        
+div.pt input[type='text'], select {
+    font: 17px Calibri;
+    text-align: center;
+    border: solid 1px #CCC;
+    width: auto;
+    padding: 2px 3px;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
