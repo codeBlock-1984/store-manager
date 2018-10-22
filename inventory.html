@@ -41,12 +41,28 @@
             <option value="electronics">Electronics</option>
             <option value="games">Games</option>
           </select>
-          <button id="srch" onclick="func" type="button">Search</button>
+          <button id="" onclick="fun" type="button">Search</button>
+          <button id="srch" onclick="func" type="button">View All</button>
+
         </form>
       </div>
       <!--<div id="test">My test div</div>-->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <input id="id" class="pr" type="text" placeholder="Id">
+          <input id="item" class="pr" type="text" placeholder="Item">
+          <input id="category" class="pr" type="text" placeholder="Category">
+          <input id="stock" class="pr" type="text" placeholder="Stock">
+          <input id="price" class="pr" type="text" placeholder="Price">
+          <button id="addB" class="pr" onclick="addProd" type="button">Add</button>
+        </div>
+
+      </div>
       <div id="action-btns">
-        <button>Add</button>
+        <button id="myBtn">Add</button>
         <button>Modify</button>
         <button>Delete</button>
       </div>
