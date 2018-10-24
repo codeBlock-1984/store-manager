@@ -1,13 +1,19 @@
 body{
   font: 15px/1.0 Arial, Helvetica,sans-serif;
-  background-color:#f4f4f4;
+  background-color:#ffffff;
   padding:0;
   margin:0;
   overflow-x:hidden;
   min-width: 450px;
+
+
 }
 
 /* Global */
+*{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 button{
     background-color: rgba(39, 60, 86, 0.7);
     border: none;
@@ -68,7 +74,7 @@ section input.i-login{
 }
 section button.btn-g{
     display: block;
-    margin: 15px auto;
+    margin: 0px auto;
     padding: 8px 40px 8px 40px;
     height: 50px;
 
@@ -77,31 +83,46 @@ section button.btn-g{
   width:100%;
   margin: auto;
   overflow:hidden;
-  background-color: #c0cfe0;
-  padding: 20px 20px 0px 40px;
+  background-color: rgb(150,3, 2);
+  padding: 0px 40px 10px 10px;
   border-bottom: 1px solid black;
 }
 div#site-id{
     float: left;
+    padding-top: 10px;
+    color: #ccc;
+    font-style: Velvetica;
+    margin: 20px 0px 0px 100px;
 }
 div#session{
     float: right;
-    margin: 60px 140px 0px 0px;
+    margin: 35px 100px 0px 0px;
 }
 span#date{
     color: red;
 }
 aside.main-links{
-    float: left;
-    background-color: #c0cfe0;
-    width:19%;
-    height: 500px;
-    border-right: 1px solid black;
+    clear: both;
+    margin: 0px;
+    background-color: #000;
+    width:100%;
+    height: 40px;
     padding-left: 0px;
     color: black;
 
     
 }
+aside.main-links nav{
+    float: left;
+    padding-top: 5px;
+    padding-left: 200px;
+}
+ aside.main-links ul li{
+        display: inline-block;
+        margin-right: 1px;
+        margin-left: 1px;
+        
+    }
 ul{
     list-style: none;
     color: black;
@@ -110,7 +131,11 @@ aside a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
-    color: #273c56;
+    border-radius: 0%;
+    background-color: rgb(150,3, 2);
+    color: #fcfcfc;
+    outline-width: 60px;
+    padding: 3px 8px 3px 8px;
 }
 aside li{
     margin: 10px 0px 10px 0px;
@@ -120,7 +145,7 @@ aside li{
 button#user{
     float: right;
     width: 80px;
-    margin: 0px 40px 10px 0px;
+    margin: 0px 40px 0px 0px;
     height: 30px;
 }
 div#prod-search{
@@ -136,18 +161,25 @@ div#prod-search input[type="search"], select{
     width: 185px;
 }
 div#action-btns{
-    float: right;
+    
     margin: 20px 40px 10px 20px;
 }
 div#action-btns button{
     height: 30px;
     width: 80px;
 }
+
+.flex-container{
+
+}
  div#main{
+    display: flex;
     float: left;
     background-color: #f4f4f4;
     width: 60%;
-    height: 500px;
+    height: 76%;
+
+    
     
 }
 /*Modal box*/
@@ -208,15 +240,69 @@ div#test{
 div#main h3{
     margin:40px 0px 20px 20px;
 }
+section#side-pane{
+
+    padding-top: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+section#inv{
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+section#prod-data{
+    padding-left: 20px;
+}
+div#result{
+    width:100%;
+    height: 60%;
+    border-radius: 8px;
+    background-color: white;
+}
+form#search input[type='search']{
+    width: 300px;
+}
+form#search select{
+    width: 200px;
+}
+form#search button{
+    width: 100px;
+}
 div.side-bar{
-    float: left;
-    background-color: #f4f4f4;
-    width: 20%;
-    height: 500px;
-    border-left: 1px solid black;
+    display: flex;
+    float: right;
+    background-color: #cccccc;
+    border-left: 1px solid #ccc;
+    width: 40%;
+    height: 70%;
+    border-left: 0px solid black;
 }
 div.side-bar h3, h5{
-    margin:40px 0px 20px 20px;
+    margin: 5px 0px 20px 20px;
+}
+div.side-bar{
+    padding-top:40px;
+}
+section#rec-data{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+section.fill{
+    width: 100%;
+}
+section#us{
+    padding-right:20px; 
+    padding-left: 20px;
+}
+div#us-tab{
+    padding-top: 40px;
+}
+div.side-header h3{
+    display: block;
+    margin:auto;
+    text-align: center;
+    padding-bottom: 20px;
 }
 div.side-bar button{
     margin: 0px 0px 20px 20px;
@@ -226,10 +312,38 @@ div.side-bar ul li{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+table#cart-tab{
+    background-color: white;
+}
+table#inv-table{
+    width:90%;
+    border-collapse: collapse;
+    border: none;
+}
+/*table#inv-table tr th:nth-child(6),table#inv-table tr th:nth-child(7){
+    border-collapse: collapse;
+}
+table#inv-table tbody{
+    border-style: hidden!important;
+}*/
+button.edit, button.delete{
+    height: 10px;
+    width:20px;
+    display: inline;
+}
+table#record-data tr th:nth-child(1), table#cart-tab tr th:nth-child(1){
+       width: 60%;
+}
+table#inv-table tr th:nth-child(3), table#inv-table tr th:nth-child(2){
+    width:30%;
+}
+table#record-data{
+    background-color: white;
+}
 div.pt table {
     width: 100%;
     font: 17px Calibri;
+
 }
 div.pt table, th, td {
     border: solid 1px #DDD;
@@ -272,8 +386,9 @@ tr:nth-child(even) {
 }
 .my-footer, footer#my-footer{
     margin: auto;
-    background-color: #273c56;
-    height: 70px;
+    background-color: rgb(150, 3, 3);
+    height: 50px;
+    color: #fcfcfc;
     text-align: center;
     padding-top: 10px;
     clear: both;

@@ -9,7 +9,7 @@
     <title>Store Manager | Inventory</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
+  <body onload="getProd()">
      <header>
       <div class="banner">
         <div id="site-id">
@@ -25,16 +25,17 @@
       <nav>
         <ul>
           <li><a href="sales.html">Sales</a></li>
-          <li><a href="records.html">Sales Records</a></li>
+          <li><a href="records.html">Records</a></li>
           <li><a href="inventory.html">Inventory</a></li>
-          <li><a href="users.html">Manage Users</a></li>
+          <li><a href="users.html">Users</a></li>
         </ul>
       </nav>
     </aside>
-    <section>
-      <div id="main">
+    
+    <div id="main">
+      <section id="inv" class="fill">
         <div id="prod-search">
-        <form id="prod">
+        <form id="search">
           <h3>Product Search</h3>
           <input type="search" name="search" placeholder="search for item...">
           <select name="product-cat">
@@ -63,27 +64,57 @@
       </div>
       <div id="action-btns">
         <button id="myBtn">Add</button>
-        <button>Modify</button>
-        <button>Delete</button>
+        
       </div>
       <div class="pt">
-        <table>
+        <table id="inv-table">
             <tr>
               <th>ID</th>
               <th>Item</th>
               <th>Category</th>
               <th>Stock</th>
               <th>Price</th>
+             
             </tr>
-            <tbody id="sr"></tbody>
+            <tbody id="sr">
+            <tr>
+              <td>1</td>
+              <td>Swatch Men's</td>
+              <td>Wears</td>
+              <td>45</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Swatch Men's</td>
+              <td>Wears</td>
+              <td>45</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Swatch Men's</td>
+              <td>Wears</td>
+              <td>45</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Swatch Men's</td>
+              <td>Wears</td>
+              <td>45</td>
+              <td>200</td>
+            </tr>
+            </tbody>
           </table>
       </div>  
-
-      </div>
-    </section>
+      
+      </section>
+    </div>
     
-    <section>
-      <div class="side-bar">
+    
+    <div class="side-bar">
+        <section id="prod-data" class="fill">
           <h3>Product</h3>
           <ul>
             <li>Name&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="s2"></span></li>
@@ -93,9 +124,9 @@
             <li>Price&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="s5"></span></li>
             <li>Min Stock&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<span id="s6"></span></li>
           </ul>
-          
-      </div>
-    </section>
+        </section>  
+    </div>
+    
     <footer class="my-footer">
       <p>Store Manager | Copyright &copy; 2018</p>
     </footer>

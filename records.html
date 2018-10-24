@@ -6,7 +6,7 @@
     <meta name="description" content="Your No. 1 store manager app!">
     <meta name="keywords" content="inventory management, sales records, store management app">
     <meta name="author" content="Emmanuel Ihemegbulam">
-    <title>Store Manager | Users</title>
+    <title>Store Manager | Records</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -25,52 +25,111 @@
       <nav>
         <ul>
           <li><a href="sales.html">Sales</a></li>
-          <li><a href="records.html">Sales Records</a></li>
+          <li><a href="records.html">Records</a></li>
           <li><a href="inventory.html">Inventory</a></li>
-          <li><a href="users.html">Manage Users</a></li>
+          <li><a href="users.html">Users</a></li>
         </ul>
       </nav>
     </aside>
-    <section>
+    
       <div id="main">
-      
+      <section id="side-pane" class="fill">
           <h3>Sales Records</h3>
-          <table>
+          <table id="rec">
             <tr>
-              <th>Record ID</th>
+              <th>ID</th>
               <th>Date</th>
               <th>Amount</th>
+              <th>By</th>
             </tr>
             <tr>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>1</td>
+              <td>30042018</td>
+              <td>5000</td>
+              <td>Ada</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>01052018</td>
+              <td>25000</td>
+              <td>Emeka</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>02052018</td>
+              <td>11000</td>
+              <td>Sylvia</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>06052018</td>
+              <td>37000</td>
+              <td>Dennis</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>06052018</td>
+              <td>12000</td>
+              <td>Tayo</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>07052018</td>
+              <td>76000</td>
+              <td>Abdul</td>
             </tr>
           </table>
-      </div>
     </section>
+      </div>
+    
 
-    <section>
+    
       <div class="side-bar">
-          <h3>Record:&nbsp;&nbsp;&nbsp;<span>...</span></h3>
-          <h5>Date:&nbsp;&nbsp;&nbsp;<span>...</span></h5>
-          <h5>By:&nbsp;&nbsp;&nbsp;<span>...</span></h5>
-           <table>
+        <section id="rec-data" class="fill">
+          <h3>Record:&nbsp;&nbsp;&nbsp;#<span>1</span></h3>
+          <h5>Date:&nbsp;&nbsp;&nbsp;<span>30042018</span></h5>
+          <h5>By:&nbsp;&nbsp;&nbsp;<span>Ada</span></h5>
+           <table id="record-data">
             <tr>
               <th>Item</th>
               <th>Qty</th>
-              <th>Price</th>
+              <th>Total</th>
             </tr>
             <tr>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>Swatch Men's Sport</td>
+              <td>2</td>
+              <td>600</td>
+            </tr>
+            <tr>
+              <td>iPhone X</td>
+              <td>1</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Addidas Slide</td>
+              <td>3</td>
+              <td>1500</td>
+            </tr>
+            <tr>
+              <td>Tommy Jeans</td>
+              <td>1</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>iPad Air</td>
+              <td>2</td>
+              <td>700</td>
+            </tr>
+            <tr>
+              <td>Gucci Leather Wallet</td>
+              <td>1</td>
+              <td>500</td>
             </tr>
           </table>
-          <h5>Total&nbsp;&nbsp;&nbsp;&nbsp;<span id="total-price">0</span></h5>
-
+          <h5>Amount&nbsp;&nbsp;&nbsp;&nbsp;<span id="total-price">5000</span></h5>
+        </section>
       </div>
-    </section>
+    
     <footer class="my-footer">
       <p>Store Manager | Copyright &copy; 2018</p>
     </footer>

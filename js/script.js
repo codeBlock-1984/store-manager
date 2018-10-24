@@ -11,6 +11,14 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
 }
 document.getElementById('date').innerHTML = formatDate();
 
+function getProd(){
+  document.getElementById('s1').innerHTML = tf.rows[0].cells[0].innerHTML;
+  document.getElementById('s2').innerHTML = tf.rows[0].cells[1].innerHTML;
+  document.getElementById('s3').innerHTML = tf.rows[0].cells[2].innerHTML;
+  document.getElementById('s4').innerHTML = tf.rows[0].cells[3].innerHTML;
+  document.getElementById('s5').innerHTML = tf.rows[0].cells[4].innerHTML;
+}
+ document.getElementsByTagName("BODY").onload = getProd();
 /*var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -100,6 +108,8 @@ request.onload = function() {
       dat += '<td>' + data[i].Category + '</td>';
       dat += '<td>' + data[i].Stock + '</td>';
       dat += '<td>' + data[i].Price + '</td>';
+      dat += '<td><button class="edit">edit</button></td>'
+      dat += '<td><button class="delete">delete</button></td>'
       dat += '</tr>';
     } else{
       dat += '<tr>';
@@ -108,6 +118,8 @@ request.onload = function() {
    dat += '<td>' + data[i].Category + '</td>';
    dat += '<td>' + data[i].Stock + '</td>';
    dat += '<td>' + data[i].Price + '</td>';
+   dat += '<td><button class="edit">ed</button></td>'
+      dat += '<td><button class="delete">del</button></td>'
    dat += '</tr>';
     }
    

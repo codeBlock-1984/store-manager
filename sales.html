@@ -29,15 +29,15 @@
       <nav>
         <ul>
           <li><a href="sales.html">Sales</a></li>
-          <li><a href="records.html">Sales Records</a></li>
+          <li><a href="records.html">Records</a></li>
           <li><a href="inventory.html">Inventory</a></li>
-          <li><a href="users.html">Manage Users</a></li>
+          <li><a href="users.html">Users</a></li>
         </ul>
       </nav>
     </aside>
-    <section>
-      <div id="main">
-        
+    
+      <div id="main" class="flex-container">
+        <section id="side-pane" class="fill">
         <form id="search" class="center">
           <h3>Product Search</h3>
           <input type="search" name="search" placeholder="search for item...">
@@ -47,13 +47,16 @@
           </select>
           <button type="submit">Search</button>
         </form>
-
+        <hr>
+        <div id="result"></div>
+        </section>
       </div>
-    </section>
-    <section>
+    
+    
       <div class="side-bar">
-          <h3>Buyer's Cart</h3>
-          <table>
+        <section class="fill">
+        <div class="side-header"><h3>Buyer's Cart</h3></div>
+          <table id="cart-tab">
             <tr>
               <th>Item</th>
               <th>Qty</th>
@@ -70,9 +73,9 @@
           <button onclick="">Checkout</button>
 
           
-
+            </section>
       </div>
-    </section>
+    
     <footer class="my-footer">
       <p>Store Manager | Copyright &copy; 2018</p>
     </footer>
