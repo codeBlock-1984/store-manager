@@ -9,7 +9,7 @@
     <title>Store Manager | Inventory</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body onload="getProd()">
+  <body>
      <header>
       <div class="banner">
         <div id="site-id">
@@ -53,17 +53,22 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
-          <input id="id" class="pr" type="text" placeholder="Id">
-          <input id="item" class="pr" type="text" placeholder="Item">
-          <input id="category" class="pr" type="text" placeholder="Category">
-          <input id="stock" class="pr" type="text" placeholder="Stock">
-          <input id="price" class="pr" type="text" placeholder="Price">
-          <button id="addB" class="pr" onclick="addProd" type="button">Add</button>
+          <div id="top">
+            <h3 id="mod-title">Title</h3>
+          </div>
+          <div id="mod">
+          <label for="uname">ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="id" class="pr" type="text" placeholder="Id"><br>
+          <label for="uname">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="item" class="pr" type="text" placeholder="Item"><br>
+          <label for="uname">Category&nbsp;&nbsp;&nbsp;</label><input id="category" class="pr" type="text" placeholder="Category"><br>
+          <label for="uname">Stock&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="stock" class="pr" type="text" placeholder="Stock"><br>
+          <label for="uname">Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="price" class="pr" type="text" placeholder="Price"><br>
+        </div>
+          <button id="addB" class="pr" onclick="addProd" type="button"></button>
         </div>
 
       </div>
       <div id="action-btns">
-        <button id="myBtn">Add</button>
+        <button id="myBtn">Add New</button>
         
       </div>
       <div class="pt">
@@ -83,6 +88,8 @@
               <td>Wears</td>
               <td>45</td>
               <td>200</td>
+              <td><button id="" onclick="editProd"><img class="ic" src="img/edit.png"></button></td>
+              <td><button onclick="delProd()"><img class="ic" src="img/delete.png"></button></td>
             </tr>
             <tr>
               <td>2</td>
@@ -90,6 +97,8 @@
               <td>Wears</td>
               <td>45</td>
               <td>200</td>
+              <td><button onclick="editProd"><img class="ic" src="img/edit.png"></button></td>
+              <td><button onclick="delProd()"><img class="ic" src="img/delete.png"></button></td>
             </tr>
             <tr>
               <td>3</td>
@@ -97,6 +106,8 @@
               <td>Wears</td>
               <td>45</td>
               <td>200</td>
+              <td><button onclick="editProd"><img class="ic" src="img/edit.png"></button></td>
+              <td><button onclick="delProd()"><img class="ic" src="img/delete.png"></button></td>
             </tr>
             <tr>
               <td>4</td>
@@ -104,6 +115,8 @@
               <td>Wears</td>
               <td>45</td>
               <td>200</td>
+              <td><button onclick="editProd"><img class="ic" src="img/edit.png"></button></td>
+              <td><button onclick="delProd()"><img class="ic" src="img/delete.png"></button></td>
             </tr>
             </tbody>
           </table>

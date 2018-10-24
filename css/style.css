@@ -201,21 +201,36 @@ div#action-btns button{
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     border-radius: 5px;
-    width: 30%; /* Could be more or less, depending on screen size */
+    padding-bottom: 40px;
+    width: 50%; /* Could be more or less, depending on screen size */
 }
-.modal-content input.pr, button.pr {
+.modal-content input.pr {
     clear: both;
-    display: block;
+    display: inline;
     width: 60%;
     height: 30px;
     margin: 10px auto;
     border-radius: 5px;
 }
-
+button.pr{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+div#top{
+    padding-left: 25px;
+}
+div#mod{
+    margin: auto;
+    padding-top:0px;
+    padding-left: 90px;
+    padding-right: 45px;
+    padding-bottom: 10px;
+}
 /* The Close Button */
 .close {
     color: #aaa;
@@ -259,6 +274,28 @@ div#result{
     height: 60%;
     border-radius: 8px;
     background-color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+div#res{
+    text-align: center;
+
+    width: 95%;
+    height:70%;
+}
+div#prodDetails{
+    float: left;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+img#prodImg{
+    height: 200px;
+    width: 200px;
+    float: right;
+}
+button#add-cart{
+    display: block;
+    margin: 40px auto;
 }
 form#search input[type='search']{
     width: 300px;
@@ -316,9 +353,20 @@ table#cart-tab{
     background-color: white;
 }
 table#inv-table{
-    width:90%;
+    width:100%;
     border-collapse: collapse;
+    border: 0px solid #ccc;
+}
+table#inv-table td, tr, tbody {
     border: none;
+}
+img.ic{
+    width:15px;
+    height: 15px;
+}
+div.pt button{
+    border: none;
+    background-color: #fcfcfc;
 }
 /*table#inv-table tr th:nth-child(6),table#inv-table tr th:nth-child(7){
     border-collapse: collapse;
